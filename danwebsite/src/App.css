@@ -1,42 +1,84 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.name_heading > * {
+	margin-left: 0;
+	margin-right: 1%;
+	font-family: 'Poppins', sans-serif;
+	color: whitesmoke;
+	width: fit-content;
+	margin-bottom: 0%;
+	margin-top: 0%;
+	display: inline-block;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name_heading > h1 {
+	font-size: 3em;
+	line-height: 1.5;
+	font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.name_heading > p {
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 200;
 }
 
-.card {
-  padding: 2em;
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	gap: 1%;
 }
 
-.read-the-docs {
-  color: #888;
+.navbar > * {
+	display: inline-block;
+}
+
+.navbar > button {
+	background-color: transparent;
+	border: none;
+	color: #38006f;
+	font-size: 1em;
+	font-weight: 200;
+	transition: all .2s ease-in-out; 
+}
+
+@keyframes nav_hover_anim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-5px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(5px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-5px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(3px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-3px) rotate(-1.2deg);
+	}
+}
+
+
+.navbar > button:hover {
+	color: whitesmoke;
+	animation: nav_hover_anim 2s ease-out 0s 1 normal backwards;
 }

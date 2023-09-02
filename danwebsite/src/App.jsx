@@ -1,33 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <header className='name_heading' >
+      <h1>Daniel Drew</h1>
+      <p>Software Engineering</p>
+    </header>
+    <nav className='navbar'>
+        <button>About Me</button>
+        <button>What I'm Up To</button>
+        <button>Contact</button>
+    </nav>
+    <main>
+      <article id='about'>
+        <h2>About Me</h2>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec auctor, nunc eget ultricies ultricies, nunc nisl
+          aliquam nunc, nec aliquam nisl nunc vitae nunc. Donec
+          auctor, nunc eget ultricies ultricies, nunc nisl aliquam
+          nunc, nec aliquam nisl nunc vitae nunc. Donec auctor, nunc
+          eget ultricies ultricies, nunc nisl aliquam nunc, nec
+          aliquam nisl nunc vitae nunc. Donec auctor, nunc eget
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </article>
+      <article id='experience'>
+        <h2>Experience</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec auctor, nunc eget ultricies ultricies, nunc nisl
+          aliquam nunc, nec aliquam nisl nunc vitae nunc. Donec
+          auctor, nunc eget ultricies ultricies, nunc nisl aliquam
+          nunc, nec aliquam nisl nunc vitae nunc. Donec auctor, nunc
+          eget ultricies ultricies, nunc nisl aliquam nunc, nec
+          aliquam nisl nunc vitae nunc. Donec auctor, nunc eget
+        </p>
+      </article>
+      <article id='contact'>
+        <h2>Contact</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec auctor, nunc eget ultricies ultricies, nunc nisl
+          aliquam nunc, nec aliquam nisl nunc vitae nunc. Donec
+          auctor, nunc eget ultricies ultricies, nunc nisl aliquam
+          nunc, nec aliquam nisl nunc vitae nunc. Donec auctor, nunc
+          eget ultricies ultricies, nunc nisl aliquam nunc, nec
+          aliquam nisl nunc vitae nunc. Donec auctor, nunc eget
+        </p>
+      </article>
+
+    </main>
     </>
   )
 }
