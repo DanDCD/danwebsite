@@ -82,3 +82,51 @@
 	color: whitesmoke;
 	animation: nav_hover_anim 2s ease-out 0s 1 normal backwards;
 }
+
+
+.intro {
+	margin-top: 15%;
+	margin-bottom: 15%;
+}
+
+.intro > * {
+	font-family: 'Poppins', sans-serif;
+	color: whitesmoke;
+	text-align: center;
+}
+
+.big {
+	font-size: 10em;
+	line-height: 1.5;
+	font-weight: 400;
+	margin-bottom: 0%;
+}
+
+.subheading {
+	margin-bottom: 20%;
+}
+
+.hidden {
+	margin-top: 50vh;
+}
+
+article {
+	width: 50%;
+	margin-bottom: 20%;
+}
+
+
+.about {
+	margin-left: 0%;
+	margin-right: auto;
+}
+
+.experience {
+	margin-left: auto;
+	margin-right: 0%;
+}
+
+.contact {
+	margin-left: 0%;
+	margin-right: auto;
+}
